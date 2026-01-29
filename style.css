@@ -1,0 +1,37 @@
+
+:root {
+  --primary: #46a462;  
+  --dark: #222222;     
+  --muted: #777777;    
+  --light: #f9f9f9;    
+}
+
+
+.section-title {
+    color:#46a462;
+    font-weight: bold;
+}
+
+
+.task-card {
+    background-color: var(--light); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.task-card p {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+
+.task-card span {
+    color: var(--primary) !important; 
+}
+
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(8, 82, 76, 0.1); 
+    background-color: #fff;
+}
