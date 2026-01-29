@@ -66,29 +66,55 @@
   --muted: #777777;
   --light: #f8fdfa;
 }
-
-.profile-box {
-  width: 190px;
-  height: 190px;
-  border-radius: 10%;
-  overflow: hidden;
-  object-fit: cover;
-  margin-top: 1rem; 
-  margin-left: auto;
-  margin-right: auto; 
-  border: 1px solid var(--muted); 
-}
-.text-primaryc {
-  color: var(--primaryc);
+.navbar {
+    background-color: #007A3D;
 }
 
-
-.card {
-  transition: transform 0.3s ease;
+.btn-outline-primary {
+    border-color: #FFFFFF;
+    color: #000000;
+    background-color: transparent;
+    box-shadow: none;
 }
 
-.card:hover {
-  transform: scale(1.03);
+   
+    .btn-outline-primary:hover {
+        background-color: #FFFFFF;
+        color: #007A3D;
+    }
+
+
+.navbar-nav .nav-link {
+    color: #FFFFFF;
 }
 
+
+.dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+    color: #333333;
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
+    .dropdown-item:hover {
+        background-color: #F0F0F0;
+        color: #007A3D;
+    }
+
+
+.btn-icon {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 4px;
+    border-radius: 6px;
+    box-shadow: none;
+}
+.section-title {
+    color: #007A3D;
+}
 >>>>>>> a6443b794b2365a45eb4c08b22926d831adcea05
