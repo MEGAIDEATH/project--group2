@@ -1,37 +1,31 @@
+.colors {
+  --primaryc: #0b443f;
+  --dark: #222222;
+  --muted: #777777;
+  --light: #f8fdfa;
+}
 
-:root {
-  --primary: #46a462;  
-  --dark: #222222;     
-  --muted: #777777;    
-  --light: #f9f9f9;    
+.profile-box {
+  width: 190px;
+  height: 190px;
+  border-radius: 10%;
+  overflow: hidden;
+  object-fit: cover;
+  margin-top: 1rem; 
+  margin-left: auto;
+  margin-right: auto; 
+  border: 1px solid var(--muted); 
+}
+.text-primaryc {
+  color: var(--primaryc);
 }
 
 
-.section-title {
-    color:#46a462;
-    font-weight: bold;
+.card {
+  transition: transform 0.3s ease;
 }
 
-
-.task-card {
-    background-color: var(--light); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card:hover {
+  transform: scale(1.03);
 }
 
-
-.task-card p {
-    color: var(--dark);
-    font-weight: 500;
-}
-
-
-.task-card span {
-    color: var(--primary) !important; 
-}
-
-
-.task-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(8, 82, 76, 0.1); 
-    background-color: #fff;
-}
