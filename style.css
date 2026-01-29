@@ -1,37 +1,60 @@
-
+/* ================= ROOT VARIABLES ================= */
 :root {
-  --primary: #46a462;  
-  --dark: #222222;     
-  --muted: #777777;    
-  --light: #f9f9f9;    
+    --primary: #46a462;
+    --primaryc: #0b443f;
+    --dark: #222222;
+    --muted: #777777;
+    --light: #f9f9f9;
+    --light-soft: #f8fdfa;
 }
 
-
+/* ================= SECTION TITLES ================= */
 .section-title {
-    color:#46a462;
+    color: var(--primary);
     font-weight: bold;
 }
 
-
+/* ================= TASK CARDS ================= */
 .task-card {
-    background-color: var(--light); 
+    background-color: var(--light);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .task-card p {
     color: var(--dark);
     font-weight: 500;
 }
 
-
 .task-card span {
-    color: var(--primary) !important; 
+    color: var(--primary) !important;
 }
-
 
 .task-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(8, 82, 76, 0.1); 
-    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(8, 82, 76, 0.1);
+    background-color: #ffffff;
+}
+
+/* ================= PROFILE / MEMBERS ================= */
+.profile-box {
+    width: 190px;
+    height: 190px;
+    border-radius: 10%;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 1rem auto;
+    border: 1px solid var(--muted);
+}
+
+.text-primaryc {
+    color: var(--primaryc);
+}
+
+/* ================= CARDS EFFECT ================= */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
